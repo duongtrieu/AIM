@@ -1,0 +1,12 @@
+[package]
+name = "AIM"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+tokio = { version = "1", features = ["full", "rt-multi-thread", "macros"] }
+warp = "0.3"
+sqlx = { version = "0.7", features = ["runtime-tokio-native-tls", "postgres"] }
+chrono = "0.4.40"
+serde_json = "1.0.140"
+futures = "0.3.31"
